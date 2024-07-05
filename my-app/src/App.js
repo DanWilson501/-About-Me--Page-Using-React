@@ -4,6 +4,7 @@ import React from 'react';
 import './App.css';
 import PersonalInfo from './components/PersonalInfo';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 
 function App() {
     const skills = [
@@ -13,6 +14,11 @@ function App() {
         { id: 4, name: 'JavaScript', level: 'Intermediate' },
         { id: 5, name: 'CSS', level: 'Advanced' },
         { id: 6, name: 'HTML', level: 'Expert' }
+    ];
+
+    const experiences = [
+      { id: 1, title: 'Tech Team Member', company: 'Target', duration: 'May 2021 – December 2023' },
+      { id: 2, title: 'Student Web Developer', company: 'USF Business Application Development', duration: 'Jun 2024 – Present' }
     ];
 
   return (
