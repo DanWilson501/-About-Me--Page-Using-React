@@ -5,6 +5,7 @@ import './App.css';
 import PersonalInfo from './components/PersonalInfo';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Education from './components/Education';
 
 function App() {
     const skills = [
@@ -21,10 +22,17 @@ function App() {
       { id: 2, title: 'Student Web Developer', company: 'USF Business Application Development', duration: 'Jun 2024 – Present' }
     ];
 
+    const education = [
+      { id: 1, institution: 'Hillsborough Community College', degree: 'B.S. Business Analytics and Information Systems', years: '2021 – 2023' },
+      { id: 2, institution: 'University of South Florida', years: '2024 – Present' }
+    ];
+
   return (
       <div className="App">
           <PersonalInfo />
           <Skills skills={skills} />
+          <Experience experiences={experiences} />
+          <Education education={education} />
       </div>
   );
 }
